@@ -1,0 +1,48 @@
+.page-landing{
+     /* O primeiro número é o grau do gradiente(Angulo) */
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    color: white;
+}
+
+#container{
+    margin: auto;
+    width: 90%;
+}
+
+.location{
+    height: 12vh;
+}
+
+.font{
+    font: 400 1.8rem/1 'Merriweather', serif;
+    color: #ffe7ae;
+}
+
+.teste{
+    width: 5rem;
+    height: 5rem;
+    background: black;
+
+    border: none;
+    border-radius: 5rem;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    transition: background .200ms;
+}
+
+.teste:hover{
+    background: white;
+}
+
+
+#logo{
+    width: 5vh;
+    margin-left: 1rem;
+}
+

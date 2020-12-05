@@ -1,0 +1,108 @@
+@import 'bootstrap';
+@import 'pages';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    //background: linear-gradient(329.54deg, #000000  0%  , #240305 100%);
+}
+
+:root{
+    font-size: 62.5%; /* Equivalente a 10px, já que o tamanho natural é 16px */
+}
+
+/* -----------Configurações da Página------ */
+.navstyle{ //Arumar a responsividade do bg
+    /* font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+    Tudo isso pode ser simplificado assim */
+    font: 400 1.8rem/1 'Merriweather', serif;
+    background-color: #3D171A;
+    border-bottom: 1px solid black;
+}
+beibe{
+    background-color: darkblue;
+    opacity: 0.5;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+.footerstyle{
+
+}
+
+
+
+/* ------Animações----- */
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateY(16px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-up{
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+#logo{
+    animation-delay: 50ms;
+}
+
+.location{
+    animation-delay: 100ms;
+}
+
+main h1{
+    animation-delay: 150ms;
+}
+
+.visit p{
+    animation-delay: 200ms;
+}
+
+.visit a{
+    animation-delay: 250ms;
+}
