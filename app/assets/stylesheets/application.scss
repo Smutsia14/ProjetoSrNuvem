@@ -1,6 +1,9 @@
 @import 'bootstrap';
 @import 'pages';
+@import 'animacao';
+@import 'galeria';
 
+/* -----------Configurações da Página------ */
 * {
     margin: 0;
     padding: 0;
@@ -8,101 +11,71 @@
 
 body {
     height: 100vh;
-    color: white;
-    //background: linear-gradient(329.54deg, #000000  0%  , #240305 100%);
+    background: linear-gradient(329.54deg,  #49C2F5  0%  , #C6DDFD 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 :root{
     font-size: 62.5%; /* Equivalente a 10px, já que o tamanho natural é 16px */
 }
 
-/* -----------Configurações da Página------ */
-.navstyle{ //Arumar a responsividade do bg
+
+/* Configurações dos elementos da navbar */
+#navstyle{ //Arumar a responsividade do bg
     /* font-weight: 400;
     font-size: 18px;
     line-height: 1;
     font-family: 'Merriweather', serif;
     Tudo isso pode ser simplificado assim */
-    font: 400 1.8rem/1 'Merriweather', serif;
-    background-color: #3D171A;
-    border-bottom: 1px solid black;
-}
-beibe{
-    background-color: darkblue;
-    opacity: 0.5;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-    border-right:1px solid #bbb;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
+    font: 400 2.4rem/1 'Helvetica Neue', serif;
+    height: 10vh;
     text-align: center;
-    padding: 14px 16px;
+    //border-bottom: 1px solid black;
+    background: linear-gradient(329.54deg, #49C2F5  20%  , #C6DDFD 100%);
+    //background-color: #08141A;
+}
+.icones{
+    height: 5vh;
+    width: 5vh;
+}
+div a:hover{
     text-decoration: none;
-  }
+}
+
+.fontnav{
+    color:  black;
+}
+.fontnav:hover:not(.active){
+    transition: opacity 0.2s linear;
+    text-decoration: none;
+    color: black;
+}
+#Logo{
+    width: 10vh;
+    margin-left: 8vh;
+}
+
+/* Fim da navbar */
   
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
-
-.footerstyle{
-
+/* Configurações do Rodapé */
+footer{
+    background: linear-gradient(329.54deg, #7479B3  0%  , #BFC4FF 100%);
+    margin: auto;
+    width: 100%;
+    color: #33272E;
+    bottom: 0px;
+    height: 30vh;
+    font-family: "FF Mark W05";
+    padding-top: 4vh;
+    border-top: 2px solid black;
 }
-
-
-
-/* ------Animações----- */
-@keyframes up{
-    from{
-        opacity: 0;
-        transform: translateY(16px);
-
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+footer a{
+    color: #33272E;
+    text-decoration: none;
 }
-.animate-up{
-    animation-name: up;
-    animation-duration: 300ms;
-    animation-fill-mode: backwards;
+footer img{
+    height: 5vh;
+    width: 5vh;
 }
-#logo{
-    animation-delay: 50ms;
-}
-
-.location{
-    animation-delay: 100ms;
-}
-
-main h1{
-    animation-delay: 150ms;
-}
-
-.visit p{
-    animation-delay: 200ms;
-}
-
-.visit a{
-    animation-delay: 250ms;
-}
+/* Configurações do Rodapé */

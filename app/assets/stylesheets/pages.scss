@@ -3,12 +3,12 @@
     text-align: center;
     min-height: 100vh;
     display: flex;
+    padding-top: 15vh;
     color: white;
 }
 
 #container{
-    margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
 .location{
@@ -20,29 +20,40 @@
     color: #ffe7ae;
 }
 
-.teste{
+.teste{ //Configurações da setinha da pagina principal
     width: 5rem;
     height: 5rem;
     background: black;
-
     border: none;
     border-radius: 5rem;
-
     display:flex;
     align-items: center;
     justify-content: center;
-
     margin: auto;
     transition: background .200ms;
 }
 
-.teste:hover{
-    background: white;
+/* -------- Configurações da Biografia no contato ------ */
+#perfil{
+    border: 2px solid;
+    border-radius: 70px;
+    height: 20vh;
+    width: 20vh;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
 }
-
-
-#logo{
-    width: 5vh;
-    margin-left: 1rem;
-}
-
+#bio {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 12vh;
+    margin-bottom: 2vh;
+    padding: 5px;
+    background-image: url("fundo.jpg");
+    border: 2px solid #000008;
+    border-radius: 20px;
+  }
+  .letras{
+    font: 400 1.6rem/1 'Merriweather', serif;
+    color: black;
+  }
+  /* -------- Fim Configurações da Biografia no contato ------ */

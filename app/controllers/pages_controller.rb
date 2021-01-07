@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def contato
   end
+  def galeria
+  end
 end

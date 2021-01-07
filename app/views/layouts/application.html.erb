@@ -22,14 +22,32 @@
   </head>
 
   <body>
-    <% render 'pages/barinha.html.erb' %>
-    <%= render 'pages/navbar.html.erb' %>
+    <%= render 'pages/barinha.html.erb' %>
+
+    
     <%= yield %>
-    <div class="footerstyle"> 
+
+    <footer>
       <div class="container">
-        <%= link_to "Voltar ao Topo", root_path, class:"float-right" %>
-        <p> Gustavo bobinho </p>
+        <div class="row text-center">
+          <div class="col mx-auto">
+            <img src= "/assets/Cumulonimbus.png" id="reizinho">
+          </div>
+          <div class="col my-auto">
+          <p class="letras h1"> SrNuvem </p>
+          </div>
+          <div class="col my-auto">
+            <a href="https://twitter.com/sr_nuvem" class="mx-2 imgfoot" target="_blank"><img src="assets/twitter.png"> </a>
+            <a href="https://www.youtube.com/channel/UCBxt61ojQ11hwUnjsSGj3-Q" class="mx-2" target="_blank"><img src="assets/youtube.png"> </a>
+            <a  href="https://www.instagram.com/sr_nuvem/" class="mx-2" target="_blank"><img src="assets/Instagram.png"> </a>
+            <a  href="https://www.deviantart.com/srnuv3m"  target="_blank"><img src="assets/Devianart.png"> </a>
+            <a  href="mailto:Cloudhouse69@gmail.com?Subject=Título%20da%20mensagem" class="mx-2" target="_blank"><img src="assets/gmail.png"> </a>
+          </div>
+        </div>
+        <h1 class="text-center pt-5"> Copyright © 2020 | Kauê Cardoso </h1>
       </div>
-    </div>
+    </footer>
+
+
   </body>
 </html>

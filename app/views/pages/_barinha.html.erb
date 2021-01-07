@@ -1,29 +1,25 @@
-<nav class="navbar navbar-expand-lg fixed-top navstyle">
-  <img src= "/assets/SrNuvemLogo.png" class="navbar-brand" id="logo">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ">
-      <li class="nav-item list-group-item-action">
-        <%= link_to "Inicio", root_path, class:"nav-link font" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Sobre", root_path, class:"nav-link font" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Contato", contato_path, class:"nav-link font" %>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle font" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mais
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item font" href="#">Action</a>
-          <a class="dropdown-item font" href="#">Another action</a>
-          <a class="dropdown-item font" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand fixed-top" id="navstyle">
+  <div class="collapse navbar-collapse row align-items-center">
+            <div class="col-2 mx-auto">
+                <img src= "/assets/SrNuvemLogo.png" class="navbar-brand d-none d-md-block" alt="SrNuvemLogo" id="Logo"> 
+            </div>
+            <div class="col bordanav">
+              <%= link_to "Home", root_path, class:"fontnav" %>
+            </div>
+            <div class="col bordanav">
+              <%= link_to "Galeria", galeria_path, class:"fontnav" %>
+            </div>
+            <div class="col">
+              <%= link_to "Contato", contato_path, class:"fontnav" %>
+            </div>
+
+            <div class="col">
+            <a href="https://twitter.com/sr_nuvem" target="_blank"><img src="assets/twitter.png" class="icones"> </a>
+            <a href="https://www.youtube.com/channel/UCBxt61ojQ11hwUnjsSGj3-Q" target="_blank"><img src="assets/youtube.png" class="icones"> </a>
+            <a href="https://www.instagram.com/sr_nuvem/" target="_blank"><img src="assets/Instagram.png" class="icones"> </a>
+            <a href="https://www.deviantart.com/srnuv3m"  target="_blank"><img src="assets/Devianart.png" class="icones"> </a>
+            <a href="mailto:Cloudhouse69@gmail.com?Subject=Título%20da%20mensagem" target="_blank"><img src="assets/gmail.png" class="icones"> </a>
+          </div>
+  
   </div>
 </nav>

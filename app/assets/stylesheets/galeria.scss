@@ -1,0 +1,30 @@
+.imagem{
+    height: 20vh;
+    width: 18vh;
+}
+#reizinho{
+    height: 12vh;
+    width: 23vh;
+}
+.retrato{
+    width: 40vh ;
+    height: 40vh;
+    transition: width 2s, height 4s;
+    border: 2px solid black;
+}
+.retrato:hover{
+    width: 60vh;
+    height: 60vh;
+    border: 4px solid black;
+}
+.paisagem{
+    width: 50vh ;
+    height: 30vh;
+    transition: width 2s, height 4s;
+    border: 2px solid black;
+}
+.paisagem:hover{
+    width: 80vh;
+    height: 55vh;
+    border: 2px solid black;
+}
