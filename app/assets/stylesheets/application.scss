@@ -11,7 +11,8 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(329.54deg,  #49C2F5  0%  , #C6DDFD 100%);
+    //background: linear-gradient(329.54deg,  #49C2F5  0%  , #C6DDFD 100%);
+    background: linear-gradient(329.54deg,  #428F8A  0%  , #7ADBD5 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -31,25 +32,35 @@ body {
     font: 400 2.4rem/1 'Helvetica Neue', serif;
     height: 10vh;
     text-align: center;
-    //border-bottom: 1px solid black;
-    background: linear-gradient(329.54deg, #49C2F5  20%  , #C6DDFD 100%);
+    border-bottom: 1px solid black;
+    background-color: #37373C;
+    background: linear-gradient(329.54deg, #333C4D  0%  , #171016 100%);
+    //background: linear-gradient(329.54deg, #49C2F5  20%  , #C6DDFD 100%);
     //background-color: #08141A;
 }
 .icones{
-    height: 5vh;
+    height: auto;
     width: 5vh;
+    color: white;
 }
+
+.icones:hover{
+    color: #7ADBD5;
+}
+
+
 div a:hover{
     text-decoration: none;
 }
 
 .fontnav{
-    color:  black;
+    //color:  black;
+    color: white;
 }
 .fontnav:hover:not(.active){
     transition: opacity 0.2s linear;
     text-decoration: none;
-    color: black;
+    color: #7ADBD5;
 }
 #Logo{
     width: 10vh;
@@ -60,10 +71,11 @@ div a:hover{
   
 /* Configurações do Rodapé */
 footer{
-    background: linear-gradient(329.54deg, #7479B3  0%  , #BFC4FF 100%);
+    //background: linear-gradient(329.54deg, #7479B3  0%  , #BFC4FF 100%);
     margin: auto;
+    background: linear-gradient(329.54deg, #333C4D  0%  , #171016 100%);
     width: 100%;
-    color: #33272E;
+    color: white;
     bottom: 0px;
     height: 30vh;
     font-family: "FF Mark W05";
@@ -71,11 +83,19 @@ footer{
     border-top: 2px solid black;
 }
 footer a{
-    color: #33272E;
+    color: white;
     text-decoration: none;
 }
-footer img{
-    height: 5vh;
-    width: 5vh;
+footer h2 a:hover{
+    color: white;
+    text-decoration: none;
 }
+.iconfoot{
+    width: 10%;
+}
+
+.iconfoot:hover{
+    color: #7ADBD5;
+}
+
 /* Configurações do Rodapé */

@@ -33,3 +33,27 @@ main h1{
 .visit a{
     animation-delay: 250ms;
 }
+
+
+
+@keyframes next {
+    from   {opacity: 0; transform: translateX(-1000px);}
+    to  {opacity: 1;transform: translateX(0);}
+}
+.animate-next{
+    animation-name: next;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+.animacao{
+    animation-delay: 200ms;
+}
+.liga{
+    animation-delay: 400ms;
+}
+.fogo{
+    animation-delay: 600ms;
+}
+.chama{
+    animation-delay: 800ms;
+}

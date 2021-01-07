@@ -2,14 +2,14 @@
     height: 20vh;
     width: 18vh;
 }
-#reizinho{
-    height: 12vh;
-    width: 23vh;
+#mini{
+    height: auto;
+    width: 50%;
 }
 .retrato{
     width: 40vh ;
     height: 40vh;
-    transition: width 2s, height 4s;
+    transition: width 2s, height 2s;
     border: 2px solid black;
 }
 .retrato:hover{
@@ -20,11 +20,20 @@
 .paisagem{
     width: 50vh ;
     height: 30vh;
-    transition: width 2s, height 4s;
+    transition: width 2s, height 3s;
     border: 2px solid black;
 }
 .paisagem:hover{
     width: 80vh;
-    height: 55vh;
+    height: 45vh;
     border: 2px solid black;
+}
+.sobre{
+    height: auto;
+    width: 100%;
+}
+
+#reizinho{
+    height: 12vh;
+    width: 23vh;
 }
